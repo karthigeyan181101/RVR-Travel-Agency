@@ -1,0 +1,975 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RVR Travels - Explore Tamil Nadu from Ooty</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-mountain"></i></span>
+        <span class="logo-text">RVR <span class="logo-accent">Travels</span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#transfers">Transfers</a></li>
+        <li><a href="#vehicle">Our Vehicle</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <p class="hero-subtitle">Welcome to RVR Travels</p>
+        <h1 class="hero-title">Explore Tamil Nadu with RVR Travels</h1>
+        <p class="hero-tagline">From the Queen of Hills, Ooty — Your Journey Begins Here</p>
+        <div class="hero-buttons">
+          <a href="#packages" class="btn btn-primary">View Packages</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Happy Travellers</span></div>
+          <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Destinations</span></div>
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Years Experience</span></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-car-wrap">
+          <img src="innova2.jpeg" alt="RVR Travels Toyota Innova TN 46 H 9696" class="hero-car-img" />
+          <div class="hero-car-badge">
+            <i class="fas fa-car"></i>
+            <div>
+              <span class="car-badge-title">Toyota Innova</span>
+              <span class="car-badge-sub">TN 46 H 9696 &nbsp;|&nbsp; 7 Seater AC</span>
+            </div>
+          </div>
+          <div class="hero-car-tag"><i class="fas fa-calendar-check"></i> Pre-book 1 day before</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll"><a href="#about"><i class="fas fa-chevron-down"></i></a></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="ooty.jpg" alt="Ooty Tea Gardens" />
+          <div class="about-badge"><i class="fas fa-award"></i><span>Trusted Since 2014</span></div>
+        </div>
+        <div class="about-text">
+          <p class="section-tag">Who We Are</p>
+          <h2 class="section-title">Your Local Tamil Nadu Travel Experts</h2>
+          <p>Nestled in the heart of the Nilgiri Hills, <strong>RVR Travels</strong> is a premier travel agency based in Ooty, Tamil Nadu. We specialize in crafting memorable journeys across the rich landscapes, temples, and coastlines of Tamil Nadu.</p>
+          <p>Whether you seek misty hill stations, sacred spiritual circuits, ancient heritage sites, or serene coastal sunrises — we design every tour with care, local expertise, and unmatched hospitality.</p>
+          <div class="about-features">
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>Customized Packages</span></div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>Experienced Local Guides</span></div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>AC Vehicles &amp; Transfers</span></div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>24/7 Customer Support</span></div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Plan Your Trip</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <p class="section-tag center">Our Tours</p>
+      <h2 class="section-title center">Tamil Nadu Tour Packages</h2>
+      <p class="section-desc center">Hand-crafted experiences across Tamil Nadu's most stunning destinations.</p>
+
+      <!-- Pre-booking Notice -->
+      <div class="prebooking-banner">
+        <i class="fas fa-calendar-check"></i>
+        <div>
+          <strong>Pre-Booking Required — Minimum 1 Day in Advance</strong>
+          <span>All packages, temple tours, and transfers must be booked at least <strong>1 day before</strong> your travel date. Last-minute same-day bookings are not accepted. Call or WhatsApp us early to confirm your slot.</span>
+        </div>
+        <a href="https://wa.me/919500913336" target="_blank" class="prebooking-cta"><i class="fab fa-whatsapp"></i> Book Now</a>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hills">🏔 Hills</button>
+        <button class="filter-btn" data-filter="coastal">🌊 Coastal</button>
+        <button class="filter-btn" data-filter="heritage">🏛 Heritage</button>
+        <button class="filter-btn" data-filter="spiritual">🕌 Spiritual</button>
+        <button class="filter-btn" data-filter="temple">🛕 Temple Tours</button>
+      </div>
+
+      <!-- Package Cards -->
+      <div class="packages-grid" id="packagesGrid">
+
+        <!-- 1. Ooty -->
+        <div class="package-card animate-card" data-category="hills">
+          <div class="card-image">
+            <img src="ooty.jpg" alt="Ooty Tea Gardens"/>
+            <div class="card-badge hills">Hills</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 3N / 4D</div>
+          </div>
+          <div class="card-body">
+            <h3>Ooty Hill Station Package</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Ooty, Nilgiris</p>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Botanical Gardens</li>
+              <li><i class="fas fa-check"></i> Doddabetta Peak</li>
+              <li><i class="fas fa-check"></i> Ooty Lake Boating</li>
+              <li><i class="fas fa-check"></i> Tea Factory Visit</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹18,500 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Kodaikanal -->
+        <div class="package-card animate-card" data-category="hills">
+          <div class="card-image">
+            <img src="kodaikanal.jpg" alt="Kodaikanal"/>
+            <div class="card-badge hills">Hills</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 2N / 3D</div>
+          </div>
+          <div class="card-body">
+            <h3>Kodaikanal Adventure Package</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Kodaikanal, Dindigul</p>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Kodai Lake Cycling</li>
+              <li><i class="fas fa-check"></i> Coaker's Walk</li>
+              <li><i class="fas fa-check"></i> Pillar Rocks</li>
+              <li><i class="fas fa-check"></i> Bryant Park</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹14,000 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Rameswaram -->
+        <div class="package-card animate-card" data-category="spiritual">
+          <div class="card-image">
+            <img src="rameswaram.jpg" alt="Rameswaram"/>
+            <div class="card-badge spiritual">Spiritual</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 2N / 3D</div>
+          </div>
+          <div class="card-body">
+            <h3>Rameswaram Spiritual Tour</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Rameswaram, Ramanathapuram</p>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Ramanathaswamy Temple</li>
+              <li><i class="fas fa-check"></i> Dhanushkodi</li>
+              <li><i class="fas fa-check"></i> Pamban Bridge</li>
+              <li><i class="fas fa-check"></i> Agni Theertham</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹16,500 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Mahabalipuram -->
+        <div class="package-card animate-card" data-category="heritage">
+          <div class="card-image">
+            <img src="mahabalipuram.jpg" alt="Mahabalipuram"/>
+            <div class="card-badge heritage">Heritage</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 1N / 2D</div>
+          </div>
+          <div class="card-body">
+            <h3>Mahabalipuram Heritage Tour</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Mahabalipuram, Chengalpattu</p>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Shore Temple</li>
+              <li><i class="fas fa-check"></i> Five Rathas</li>
+              <li><i class="fas fa-check"></i> Arjuna's Penance</li>
+              <li><i class="fas fa-check"></i> Beach Leisure</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹10,500 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Kanyakumari -->
+        <div class="package-card animate-card" data-category="coastal">
+          <div class="card-image">
+            <img src="kanyakumari.jpg" alt="Kanyakumari"/>
+            <div class="card-badge coastal">Coastal</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 2N / 3D</div>
+          </div>
+          <div class="card-body">
+            <h3>Kanyakumari Sunrise Package</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Kanyakumari, Tamil Nadu</p>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Sunrise at Land's End</li>
+              <li><i class="fas fa-check"></i> Vivekananda Rock</li>
+              <li><i class="fas fa-check"></i> Thiruvalluvar Statue</li>
+              <li><i class="fas fa-check"></i> Padmanabhapuram Palace</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹18,000 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Madurai -->
+        <div class="package-card animate-card" data-category="spiritual">
+          <div class="card-image">
+            <img src="madurai.jpg" alt="Madurai"/>
+            <div class="card-badge spiritual">Spiritual</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 1N / 2D</div>
+          </div>
+          <div class="card-body">
+            <h3>Madurai Temple Tour</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Madurai, Tamil Nadu</p>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Meenakshi Amman Temple</li>
+              <li><i class="fas fa-check"></i> Thirumalai Nayakkar Palace</li>
+              <li><i class="fas fa-check"></i> Gandhi Museum</li>
+              <li><i class="fas fa-check"></i> Local Street Food Tour</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹10,500 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Coimbatore & Palani -->
+        <div class="package-card animate-card" data-category="spiritual">
+          <div class="card-image">
+            <img src="palani.jpg" alt="Palani"/>
+            <div class="card-badge spiritual">Spiritual</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 2N / 3D</div>
+          </div>
+          <div class="card-body">
+            <h3>Coimbatore &amp; Palani Package</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Coimbatore &amp; Palani</p>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Palani Murugan Temple</li>
+              <li><i class="fas fa-check"></i> Adiyogi Shiva Statue</li>
+              <li><i class="fas fa-check"></i> Marudhamalai Temple</li>
+              <li><i class="fas fa-check"></i> Kovai Kondattam</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹13,500 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Yercaud -->
+        <div class="package-card animate-card" data-category="hills">
+          <div class="card-image">
+            <img src="yercaud.jpg" alt="Yercaud"/>
+            <div class="card-badge hills">Hills</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 1N / 2D</div>
+          </div>
+          <div class="card-body">
+            <h3>Yercaud Forest Package</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Yercaud, Salem</p>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Yercaud Lake</li>
+              <li><i class="fas fa-check"></i> Shevaroy Hills Trek</li>
+              <li><i class="fas fa-check"></i> Lady's Seat Viewpoint</li>
+              <li><i class="fas fa-check"></i> Coffee &amp; Spice Plantations</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹9,000 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /packages-grid -->
+
+      <!-- TEMPLE TOURS SECTION HEADER -->
+      <div class="temple-section-head">
+        <div class="temple-divider">
+          <span><i class="fas fa-om"></i> Special Temple Tour Packages <i class="fas fa-om"></i></span>
+        </div>
+        <p class="section-desc" style="margin-top:10px;">Sacred pilgrimages across Tamil Nadu — all in your private Innova, fully arranged by RVR Travels from Ooty & Coimbatore.</p>
+      </div>
+
+      <div class="packages-grid temple-grid" id="templeGrid">
+
+        <!-- T1. Ooty to Thiruchendur -->
+        <div class="package-card animate-card" data-category="temple">
+          <div class="card-image">
+            <img src="thiruchendur.jpg" alt="Thiruchendur Murugan Temple"/>
+            <div class="card-badge temple-badge">Temple Tour</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 1N / 2D</div>
+          </div>
+          <div class="card-body">
+            <h3>Ooty → Thiruchendur</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Thiruchendur Murugan Temple</p>
+            <div class="route-tag"><i class="fas fa-route"></i> Ooty → Madurai → Thiruchendur</div>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Thiruchendur Murugan Temple darshan</li>
+              <li><i class="fas fa-check"></i> Beach temple on the seashore</li>
+              <li><i class="fas fa-check"></i> ~370 km from Ooty</li>
+              <li><i class="fas fa-check"></i> Pickup &amp; drop from Ooty</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹17,000 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- T2. Coimbatore to Thiruchendur -->
+        <div class="package-card animate-card" data-category="temple">
+          <div class="card-image">
+            <img src="thiruchendur.jpg" alt="Thiruchendur Murugan Temple"/>
+            <div class="card-badge temple-badge">Temple Tour</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 1N / 2D</div>
+          </div>
+          <div class="card-body">
+            <h3>Coimbatore → Thiruchendur</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Thiruchendur Murugan Temple</p>
+            <div class="route-tag"><i class="fas fa-route"></i> Coimbatore → Madurai → Thiruchendur</div>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Thiruchendur Murugan Temple darshan</li>
+              <li><i class="fas fa-check"></i> One of 6 abodes of Lord Murugan</li>
+              <li><i class="fas fa-check"></i> ~320 km from Coimbatore</li>
+              <li><i class="fas fa-check"></i> Pickup &amp; drop from Coimbatore</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹15,000 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- T3. Coimbatore to Tirupati -->
+        <div class="package-card animate-card" data-category="temple">
+          <div class="card-image">
+            <img src="tirupati.jpg" alt="Tirupati Balaji Temple"/>
+            <div class="card-badge temple-badge">Temple Tour</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 2N / 3D</div>
+          </div>
+          <div class="card-body">
+            <h3>Coimbatore → Tirupati</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Tirumala Venkateswara Temple</p>
+            <div class="route-tag"><i class="fas fa-route"></i> Coimbatore → Bangalore → Tirupati</div>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Tirumala Sri Venkateswara Temple</li>
+              <li><i class="fas fa-check"></i> Padmavathi Devi Temple, Tiruchanur</li>
+              <li><i class="fas fa-check"></i> ~450 km from Coimbatore</li>
+              <li><i class="fas fa-check"></i> Darshan assistance included</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹19,500 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- T4. Ooty to Tirupati -->
+        <div class="package-card animate-card" data-category="temple">
+          <div class="card-image">
+            <img src="tirupati.jpg" alt="Tirupati Balaji Temple"/>
+            <div class="card-badge temple-badge">Temple Tour</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 2N / 3D</div>
+          </div>
+          <div class="card-body">
+            <h3>Ooty → Tirupati</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Tirumala Venkateswara Temple</p>
+            <div class="route-tag"><i class="fas fa-route"></i> Ooty → Bangalore → Tirupati</div>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Tirumala Sri Venkateswara Temple</li>
+              <li><i class="fas fa-check"></i> Padmavathi Devi Temple, Tiruchanur</li>
+              <li><i class="fas fa-check"></i> ~500 km from Ooty</li>
+              <li><i class="fas fa-check"></i> Comfortable Innova journey</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹21,000 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- T5. Thiruvannamalai -->
+        <div class="package-card animate-card" data-category="temple">
+          <div class="card-image">
+            <img src="thiruvannamalai.jpg" alt="Thiruvannamalai Temple"/>
+            <div class="card-badge temple-badge">Temple Tour</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 1N / 2D</div>
+          </div>
+          <div class="card-body">
+            <h3>Thiruvannamalai Temple Tour</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Arunachaleswarar Temple, Thiruvannamalai</p>
+            <div class="route-tag"><i class="fas fa-route"></i> Ooty / Coimbatore → Thiruvannamalai</div>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Arunachaleswarar Shiva Temple</li>
+              <li><i class="fas fa-check"></i> Girivalam (Arunachala circumambulation)</li>
+              <li><i class="fas fa-check"></i> Ramana Maharshi Ashram</li>
+              <li><i class="fas fa-check"></i> ~300 km from Ooty</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹13,000 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- T6. Madurai Meenakshi Amman -->
+        <div class="package-card animate-card" data-category="temple">
+          <div class="card-image">
+            <img src="meenakshi.jpg" alt="Madurai Meenakshi Amman Temple"/>
+            <div class="card-badge temple-badge">Temple Tour</div>
+            <div class="card-duration"><i class="far fa-clock"></i> 1N / 2D</div>
+          </div>
+          <div class="card-body">
+            <h3>Madurai Meenakshi Amman Temple</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Meenakshi Amman Temple, Madurai</p>
+            <div class="route-tag"><i class="fas fa-route"></i> Ooty / Coimbatore → Madurai</div>
+            <ul class="card-highlights">
+              <li><i class="fas fa-check"></i> Meenakshi Amman Temple darshan</li>
+              <li><i class="fas fa-check"></i> Thirumalai Nayakkar Palace</li>
+              <li><i class="fas fa-check"></i> Alagar Kovil Temple</li>
+              <li><i class="fas fa-check"></i> ~250 km from Ooty</li>
+            </ul>
+            <div class="card-footer">
+              <div class="card-price">₹13,500 <span>/ vehicle (Innova 7-Seater)</span></div>
+              <a href="#contact" class="btn btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /temple-grid -->
+    </div>
+  </section>
+
+  <!-- AIRPORT & RAILWAY TRANSFERS -->
+  <section class="transfers" id="transfers">
+    <div class="container">
+      <p class="section-tag center">Hassle-Free Transfers</p>
+      <h2 class="section-title center">Airport &amp; Railway Station Transfers</h2>
+      <p class="section-desc center">Arrive or depart in comfort — our Toyota Innova picks you up right at the gate, on time, every time. Available 24/7 across all major airports and railway stations in Tamil Nadu.</p>
+
+      <!-- Pre-booking Notice -->
+      <div class="prebooking-banner">
+        <i class="fas fa-calendar-check"></i>
+        <div>
+          <strong>Pre-Booking Required — Minimum 1 Day in Advance</strong>
+          <span>All airport and railway transfers must be booked at least <strong>1 day before</strong> your travel. This helps us track your flight/train and ensure the driver is ready on time.</span>
+        </div>
+        <a href="https://wa.me/919500913336" target="_blank" class="prebooking-cta"><i class="fab fa-whatsapp"></i> Book Now</a>
+      </div>
+
+      <!-- Transfer Type Tabs -->
+      <div class="transfer-tabs">
+        <button class="transfer-tab active" data-tab="airport"><i class="fas fa-plane"></i> Airport Transfers</button>
+        <button class="transfer-tab" data-tab="railway"><i class="fas fa-train"></i> Railway Transfers</button>
+      </div>
+
+      <!-- AIRPORT TRANSFERS -->
+      <div class="transfer-panel" id="airportPanel">
+        <div class="transfer-grid">
+
+          <div class="transfer-card animate-card">
+            <div class="transfer-icon airport"><i class="fas fa-plane-arrival"></i></div>
+            <div class="transfer-info">
+              <h3>Coimbatore Airport (CJB) ↔ Ooty</h3>
+              <p class="transfer-route"><i class="fas fa-road"></i> ~88 km &nbsp;|&nbsp; <i class="far fa-clock"></i> ~2.5 hrs</p>
+              <ul class="transfer-features">
+                <li><i class="fas fa-check"></i> Flight tracking — we wait for delayed flights</li>
+                <li><i class="fas fa-check"></i> Pickup from arrivals gate</li>
+                <li><i class="fas fa-check"></i> Drop to hotel / home in Ooty</li>
+                <li><i class="fas fa-check"></i> Available 24/7 including midnight flights</li>
+              </ul>
+              <div class="transfer-price-row">
+                <div class="transfer-price">₹3,200 <span>/ Innova (one way)</span></div>
+                <a href="#contact" class="btn btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="transfer-card animate-card">
+            <div class="transfer-icon airport"><i class="fas fa-plane-departure"></i></div>
+            <div class="transfer-info">
+              <h3>Coimbatore Airport (CJB) ↔ Coimbatore City</h3>
+              <p class="transfer-route"><i class="fas fa-road"></i> ~10 km &nbsp;|&nbsp; <i class="far fa-clock"></i> ~30 mins</p>
+              <ul class="transfer-features">
+                <li><i class="fas fa-check"></i> Airport pickup &amp; city drop</li>
+                <li><i class="fas fa-check"></i> Hotel / home pickup for departures</li>
+                <li><i class="fas fa-check"></i> Luggage assistance</li>
+                <li><i class="fas fa-check"></i> AC Innova, on-time guaranteed</li>
+              </ul>
+              <div class="transfer-price-row">
+                <div class="transfer-price">₹1,200 <span>/ Innova (one way)</span></div>
+                <a href="#contact" class="btn btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="transfer-card animate-card">
+            <div class="transfer-icon airport"><i class="fas fa-plane"></i></div>
+            <div class="transfer-info">
+              <h3>Madurai Airport (IXM) ↔ Ooty</h3>
+              <p class="transfer-route"><i class="fas fa-road"></i> ~250 km &nbsp;|&nbsp; <i class="far fa-clock"></i> ~5 hrs</p>
+              <ul class="transfer-features">
+                <li><i class="fas fa-check"></i> Direct pickup from Madurai Airport</li>
+                <li><i class="fas fa-check"></i> Scenic highway drive to Ooty</li>
+                <li><i class="fas fa-check"></i> Refreshment stop included</li>
+                <li><i class="fas fa-check"></i> Drop to hotel / resort in Ooty</li>
+              </ul>
+              <div class="transfer-price-row">
+                <div class="transfer-price">₹8,000 <span>/ Innova (one way)</span></div>
+                <a href="#contact" class="btn btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="transfer-card animate-card">
+            <div class="transfer-icon airport"><i class="fas fa-plane"></i></div>
+            <div class="transfer-info">
+              <h3>Chennai Airport (MAA) ↔ Ooty</h3>
+              <p class="transfer-route"><i class="fas fa-road"></i> ~540 km &nbsp;|&nbsp; <i class="far fa-clock"></i> ~9 hrs</p>
+              <ul class="transfer-features">
+                <li><i class="fas fa-check"></i> Direct Innova from Chennai Airport</li>
+                <li><i class="fas fa-check"></i> Overnight or early-morning options</li>
+                <li><i class="fas fa-check"></i> Refreshment stops en route</li>
+                <li><i class="fas fa-check"></i> Drop to Ooty / Kodaikanal / Coimbatore</li>
+              </ul>
+              <div class="transfer-price-row">
+                <div class="transfer-price">₹16,500 <span>/ Innova (one way)</span></div>
+                <a href="#contact" class="btn btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RAILWAY TRANSFERS -->
+      <div class="transfer-panel hidden" id="railwayPanel">
+        <div class="transfer-grid">
+
+          <div class="transfer-card animate-card">
+            <div class="transfer-icon railway"><i class="fas fa-train"></i></div>
+            <div class="transfer-info">
+              <h3>Mettupalayam Railway Station ↔ Ooty</h3>
+              <p class="transfer-route"><i class="fas fa-road"></i> ~40 km &nbsp;|&nbsp; <i class="far fa-clock"></i> ~1.5 hrs</p>
+              <ul class="transfer-features">
+                <li><i class="fas fa-check"></i> Pickup from Mettupalayam station</li>
+                <li><i class="fas fa-check"></i> Connects Nilgiri Mountain Railway passengers</li>
+                <li><i class="fas fa-check"></i> Scenic Ghats road drive</li>
+                <li><i class="fas fa-check"></i> Drop to any hotel in Ooty</li>
+              </ul>
+              <div class="transfer-price-row">
+                <div class="transfer-price">₹1,800 <span>/ Innova (one way)</span></div>
+                <a href="#contact" class="btn btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="transfer-card animate-card">
+            <div class="transfer-icon railway"><i class="fas fa-train"></i></div>
+            <div class="transfer-info">
+              <h3>Coimbatore Railway Station ↔ Ooty</h3>
+              <p class="transfer-route"><i class="fas fa-road"></i> ~88 km &nbsp;|&nbsp; <i class="far fa-clock"></i> ~2.5 hrs</p>
+              <ul class="transfer-features">
+                <li><i class="fas fa-check"></i> Pickup from Coimbatore Junction / North</li>
+                <li><i class="fas fa-check"></i> Train tracking — no wait for late trains</li>
+                <li><i class="fas fa-check"></i> Luggage assistance included</li>
+                <li><i class="fas fa-check"></i> Direct drop to Ooty</li>
+              </ul>
+              <div class="transfer-price-row">
+                <div class="transfer-price">₹3,000 <span>/ Innova (one way)</span></div>
+                <a href="#contact" class="btn btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="transfer-card animate-card">
+            <div class="transfer-icon railway"><i class="fas fa-train"></i></div>
+            <div class="transfer-info">
+              <h3>Madurai Railway Station ↔ Ooty</h3>
+              <p class="transfer-route"><i class="fas fa-road"></i> ~250 km &nbsp;|&nbsp; <i class="far fa-clock"></i> ~5 hrs</p>
+              <ul class="transfer-features">
+                <li><i class="fas fa-check"></i> Direct pickup from Madurai Junction</li>
+                <li><i class="fas fa-check"></i> Comfortable highway drive to Ooty</li>
+                <li><i class="fas fa-check"></i> Refreshment stop at Dindigul</li>
+                <li><i class="fas fa-check"></i> 24/7 availability</li>
+              </ul>
+              <div class="transfer-price-row">
+                <div class="transfer-price">₹8,000 <span>/ Innova (one way)</span></div>
+                <a href="#contact" class="btn btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="transfer-card animate-card">
+            <div class="transfer-icon railway"><i class="fas fa-train"></i></div>
+            <div class="transfer-info">
+              <h3>Chennai Railway Station ↔ Ooty</h3>
+              <p class="transfer-route"><i class="fas fa-road"></i> ~540 km &nbsp;|&nbsp; <i class="far fa-clock"></i> ~9 hrs</p>
+              <ul class="transfer-features">
+                <li><i class="fas fa-check"></i> Pickup from Chennai Central / Egmore</li>
+                <li><i class="fas fa-check"></i> Overnight Innova drive option</li>
+                <li><i class="fas fa-check"></i> Multiple stops as needed</li>
+                <li><i class="fas fa-check"></i> Drop to Ooty / Kodaikanal</li>
+              </ul>
+              <div class="transfer-price-row">
+                <div class="transfer-price">₹16,500 <span>/ Innova (one way)</span></div>
+                <a href="#contact" class="btn btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Transfer Note -->
+      <div class="transfer-note">
+        <i class="fas fa-info-circle"></i>
+        <span>All transfer prices are for the <strong>full Innova (up to 7 passengers)</strong>. Return trips get a <strong>10% discount</strong>. Toll, parking &amp; driver allowance included. Call us anytime — <strong>+91 9500913336</strong></span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OUR VEHICLE -->
+  <section class="vehicle-section" id="vehicle">
+    <div class="container">
+      <p class="section-tag center">Travel in Comfort</p>
+      <h2 class="section-title center">Our Travel Vehicle</h2>
+      <p class="section-desc center">Every journey with RVR Travels is in our own well-maintained, air-conditioned Toyota Innova — driven by an experienced local driver who knows every road in Tamil Nadu.</p>
+      <div class="vehicle-grid">
+        <div class="vehicle-image-wrap">
+          <img src="innova.jpg" alt="RVR Travels Toyota Innova TN 46 H 9696" class="vehicle-img" />
+          <div class="vehicle-plate-badge">
+            <i class="fas fa-car"></i>
+            <span>TN 46 H 9696</span>
+          </div>
+        </div>
+        <div class="vehicle-details">
+          <div class="vehicle-name-row">
+            <div class="vehicle-logo-wrap"><i class="fas fa-car-side"></i></div>
+            <div>
+              <h3>Toyota Innova</h3>
+              <p class="vehicle-sub">RVR Travels — Official Tour Vehicle</p>
+            </div>
+          </div>
+          <div class="vehicle-specs-grid">
+            <div class="spec-box">
+              <i class="fas fa-users"></i>
+              <span class="spec-val">7 Seater</span>
+              <span class="spec-label">Capacity</span>
+            </div>
+            <div class="spec-box">
+              <i class="fas fa-snowflake"></i>
+              <span class="spec-val">Full AC</span>
+              <span class="spec-label">Air Conditioned</span>
+            </div>
+            <div class="spec-box">
+              <i class="fas fa-suitcase-rolling"></i>
+              <span class="spec-val">Large</span>
+              <span class="spec-label">Luggage Space</span>
+            </div>
+            <div class="spec-box">
+              <i class="fas fa-shield-alt"></i>
+              <span class="spec-val">Insured</span>
+              <span class="spec-label">Fully Covered</span>
+            </div>
+          </div>
+          <ul class="vehicle-features">
+            <li><i class="fas fa-check-circle"></i> Comfortable seating with extra legroom for all 7 passengers</li>
+            <li><i class="fas fa-check-circle"></i> Powerful AC — perfect for Tamil Nadu's warm climate</li>
+            <li><i class="fas fa-check-circle"></i> Experienced, verified driver with 10+ years on Tamil Nadu roads</li>
+            <li><i class="fas fa-check-circle"></i> All packages priced per vehicle — best value for groups &amp; families</li>
+            <li><i class="fas fa-check-circle"></i> GPS-enabled for safe navigation across all destinations</li>
+            <li><i class="fas fa-check-circle"></i> First-aid kit &amp; emergency support on every trip</li>
+          </ul>
+          <div class="vehicle-cta">
+            <a href="#packages" class="btn btn-primary"><i class="fas fa-route"></i> View Packages</a>
+            <a href="#contact" class="btn btn-outline-green"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us">
+    <div class="container">
+      <p class="section-tag center">Our Promise</p>
+      <h2 class="section-title center">Why Choose RVR Travels?</h2>
+      <div class="why-grid">
+        <div class="why-card animate-card">
+          <div class="why-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h3>Local Expertise</h3>
+          <p>Born and raised in Ooty — we know Tamil Nadu like the back of our hand. Every route, hidden gem, and local secret is yours.</p>
+        </div>
+        <div class="why-card animate-card">
+          <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+          <h3>Best Price Guarantee</h3>
+          <p>Transparent pricing with no hidden charges. We promise the best value for every rupee you spend with us.</p>
+        </div>
+        <div class="why-card animate-card">
+          <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Safe &amp; Secure Travel</h3>
+          <p>All vehicles are sanitized, drivers are verified, and our team ensures your safety at every step of the journey.</p>
+        </div>
+        <div class="why-card animate-card">
+          <div class="why-icon"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Support</h3>
+          <p>Our team is available round the clock — before, during, and after your trip. We're just a call away.</p>
+        </div>
+        <div class="why-card animate-card">
+          <div class="why-icon"><i class="fas fa-hotel"></i></div>
+          <h3>Handpicked Hotels</h3>
+          <p>We partner only with quality-checked, comfortable accommodations — from cozy homestays to premium resorts.</p>
+        </div>
+        <div class="why-card animate-card">
+          <div class="why-icon"><i class="fas fa-sliders-h"></i></div>
+          <h3>Customized Tours</h3>
+          <p>Every traveller is unique. We design flexible, personalised itineraries tailored to your interests and budget.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <p class="section-tag center">What Clients Say</p>
+      <h2 class="section-title center">Traveller Stories</h2>
+      <div class="testi-grid">
+        <div class="testi-card animate-card">
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"The Ooty package was absolutely breathtaking. RVR Travels took care of everything — hotel, transport, sightseeing. Truly a stress-free experience!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">RK</div>
+            <div><strong>Ramesh Kumar</strong><span>Chennai</span></div>
+          </div>
+        </div>
+        <div class="testi-card animate-card">
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"We booked the Kanyakumari Sunrise package for our honeymoon. The arrangements were perfect and the views were beyond words. Highly recommend RVR!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">PS</div>
+            <div><strong>Priya Suresh</strong><span>Coimbatore</span></div>
+          </div>
+        </div>
+        <div class="testi-card animate-card">
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          <p>"The Rameswaram spiritual tour was very well organised. Our guide was knowledgeable and the hotels were clean and comfortable. Will book again!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">VM</div>
+            <div><strong>Vijay Murugan</strong><span>Madurai</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-tag center">Get In Touch</p>
+      <h2 class="section-title center">Plan Your Journey Today</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Our Office</h4>
+              <p>RVR Travels, Manjoor, Kundha,<br/>Ooty (Udhagamandalam) – 643219,<br/>Tamil Nadu, India</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 9500913336<br/> </p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>rvrtravel01@gmail.com<br/>bookings@rvrtravels.in</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-headset"></i></div>
+            <div>
+              <h4>Available 24/7</h4>
+              <p>We are available round the clock.<br/>Call or WhatsApp us anytime!</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" id="name" placeholder="" />
+                <span class="error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="+91 9500913336" />
+                <span class="error" id="phoneError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="email" placeholder="ragulkeerthan8165@gmail.com" />
+              <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label>Package Interested In</label>
+              <select id="package">
+                <option value="">-- Select a Package --</option>
+                <optgroup label="✈ Airport Transfers">
+                <option>Coimbatore Airport ↔ Ooty</option>
+                <option>Coimbatore Airport ↔ Coimbatore City</option>
+                <option>Madurai Airport ↔ Ooty</option>
+                <option>Chennai Airport ↔ Ooty</option>
+                </optgroup>
+                <optgroup label="🚂 Railway Transfers">
+                <option>Mettupalayam Station ↔ Ooty</option>
+                <option>Coimbatore Railway Station ↔ Ooty</option>
+                <option>Madurai Railway Station ↔ Ooty</option>
+                <option>Chennai Railway Station ↔ Ooty</option>
+                </optgroup>
+                <optgroup label="🏔 Hill Station Tours">
+                <option>Ooty Hill Station Package (3N/4D)</option>
+                <option>Kodaikanal Adventure Package (2N/3D)</option>
+                <option>Yercaud Forest Package (1N/2D)</option>
+                </optgroup>
+                <optgroup label="🌊 Coastal &amp; Heritage">
+                <option>Rameswaram Spiritual Tour (2N/3D)</option>
+                <option>Mahabalipuram Heritage Tour (1N/2D)</option>
+                <option>Kanyakumari Sunrise Package (2N/3D)</option>
+                <option>Madurai Temple Tour (1N/2D)</option>
+                <option>Coimbatore &amp; Palani Package (2N/3D)</option>
+                </optgroup>
+                <optgroup label="🛕 Temple Tours">
+                <option>Ooty → Thiruchendur (1N/2D)</option>
+                <option>Coimbatore → Thiruchendur (1N/2D)</option>
+                <option>Coimbatore → Tirupati (2N/3D)</option>
+                <option>Ooty → Tirupati (2N/3D)</option>
+                <option>Thiruvannamalai Temple Tour (1N/2D)</option>
+                <option>Madurai Meenakshi Amman Temple (1N/2D)</option>
+                </optgroup>
+                <option>Custom Package</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea id="message" rows="4" placeholder="Tell us about your travel plans, number of people, preferred dates..."></textarea>
+              <span class="error" id="messageError"></span>
+            </div>
+            <div class="form-note">
+              <i class="fas fa-info-circle"></i>
+              <span>Bookings must be made <strong>at least 1 day before</strong> your travel date. We will confirm your booking via WhatsApp or call.</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Enquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <div class="logo">
+            <span class="logo-icon"><i class="fas fa-mountain"></i></span>
+            <span class="logo-text" style="color:#fff;">RVR <span class="logo-accent">Travels</span></span>
+          </div>
+          <p class="footer-desc">Your trusted travel partner based in Ooty, Tamil Nadu. Crafting unforgettable journeys since 2014.</p>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#transfers">Transfers</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Popular Tours</h4>
+          <ul>
+            <li><a href="#packages">Ooty Hill Station</a></li>
+            <li><a href="#packages">Kodaikanal Adventure</a></li>
+            <li><a href="#packages">Rameswaram Spiritual</a></li>
+            <li><a href="#packages">Kanyakumari Sunrise</a></li>
+            <li><a href="#packages">Madurai Temple Tour</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Ooty, Tamil Nadu – 643219</li>
+            <li><i class="fas fa-phone-alt"></i> +91 9500913336</li>
+            <li><i class="fas fa-envelope"></i> ragulkeerthan8165@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 RVR Travels. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:#f0a500;"></i> in Ooty</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
