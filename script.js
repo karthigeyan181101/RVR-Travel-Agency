@@ -1,4 +1,4 @@
-﻿// ===== NAVBAR SCROLL =====
+// ===== NAVBAR SCROLL =====
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 60) {
@@ -130,12 +130,58 @@ contactForm.addEventListener('submit', function(e) {
     const btn = contactForm.querySelector('button[type="submit"]');
     btn.textContent = 'Sending...';
     btn.disabled = true;
+
+    const nameVal = name.value.trim();
+    const phoneVal = phone.value.trim();
+    const emailVal = email.value.trim();
+    const packageVal = document.getElementById('package').value || 'Not selected';
+    const messageVal = message.value.trim();
+
+    // ===== 1. SEND EMAIL VIA WEB3FORMS =====
+    const formData = new FormData();
+    formData.append('access_key', '28881942-41bc-45af-8bff-6611fac378ca');
+    formData.append('subject', '🔔 New Enquiry — RVR Travels Website');
+    formData.append('from_name', 'RVR Travels Website');
+    formData.append('name', nameVal);
+    formData.append('phone', phoneVal);
+    formData.append('email', emailVal);
+    formData.append('package', packageVal);
+    formData.append('message', messageVal);
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log('Email sent:', data);
+    })
+    .catch(err => {
+      console.error('Email send error:', err);
+    });
+
+    // ===== 2. SEND VIA WHATSAPP =====
+    const waText = `🔔 *New RVR Travels Enquiry!*\n\n` +
+      `👤 *Name:* ${nameVal}\n` +
+      `📞 *Phone:* ${phoneVal}\n` +
+      `📧 *Email:* ${emailVal}\n` +
+      `📦 *Package:* ${packageVal}\n` +
+      `💬 *Message:* ${messageVal}`;
+
+    const whatsappURL = `https://wa.me/919500913336?text=${encodeURIComponent(waText)}`;
+
+    // ===== 3. SHOW SUCCESS & OPEN WHATSAPP =====
     setTimeout(() => {
-      alert('Thank you! Your enquiry has been sent. The RVR Travels team will contact you shortly.');
+      contactForm.style.display = 'none';
+      const successEl = document.getElementById('formSuccess');
+      successEl.style.display = 'flex';
+      // Set the WhatsApp link in success message in case popup was blocked
+      document.getElementById('waFallbackLink').href = whatsappURL;
+      window.open(whatsappURL, '_blank');
       contactForm.reset();
       btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Enquiry';
       btn.disabled = false;
-    }, 1000);
+    }, 800);
   }
 });
 
